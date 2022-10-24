@@ -9,6 +9,13 @@
     <link href='https://fonts.googleapis.com/css?family=Sigmar+One' rel='stylesheet' type='text/css'>
 </head>
 <body>
+    <div class="dark-btn">
+        <label class="switch">
+            <input type="checkbox" onclick="changeTheme()"/>
+            <span></span>
+        </label>
+        <!-- <button id="dark" onclick="">Dark</button> -->
+    </div>
     <h1 id="title" style="text-align: center; font-family: 'Sigmar One', cursive;">GALLERY</h1>
         <div class="gallery">
             <figure>
@@ -103,5 +110,11 @@
 
             </figure>
         </div>
+        <script>
+           function changeTheme() {
+            document.body.classList.toggle('dark-theme');
+           }
+
+        </script>
 </body>
 </html>
